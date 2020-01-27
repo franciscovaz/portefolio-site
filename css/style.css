@@ -22,7 +22,7 @@
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .1rem;
-    background-color: rgba(0, 0, 0, 0.3)!important;
+    background-color: rgba(0, 0, 0, 0.9)!important;
 }
 
 .navbar-nav li{
@@ -177,6 +177,81 @@
 }
 
 
+/* SKILLS */
+
+
+.get {
+	display:none;
+}
+
+#diagram {
+	width:600px;
+    height:600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+}
+
+/* #content {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-right: 60%;
+        transform: translate(-50%, -50%)
+}
+    
+    #content h1 {
+    font-family:'Cabin Sketch', arial, serif;
+    text-shadow:3px 3px 0 #ddd;
+    color:#193340;
+    font-size:20px;
+    margin-bottom:40px;
+    text-align:right;
+    } */
+ 
+    
+    /* .skills .jq {
+    background:#97BE0D;
+    }
+    
+    .skills .css {
+    background:#D84F5F;
+    }
+    
+    .skills .html {
+    background:#88B8E6;
+    }
+    
+    .skills .php {
+    background:#BEDBE9;
+    }
+    
+    .skills .sql {
+    background:#EDEBEE;
+    }
+
+    .skills .autodidact{terminal
+        background: #fbd01e;
+    } */
+    
+    
+    
+    /* ------ anchors
+    -----------------------------------------------*/
+    
+    a {
+    text-decoration:none;
+    color:#333;
+    }
+
+
+
+
+
 /* ASSOCIATION SECTION */
 .tulha-info{
     width: 60%;
@@ -227,7 +302,7 @@
 }
 
 /* portefolio SECTION */
-.portefolio{
+/* .portefolio{
     width: 60%;
     margin: 0 auto;
     padding: 50px 0;
@@ -248,7 +323,143 @@
 
 .portefolio-info .col img{
     max-width: 100%;
+} */
+
+
+
+/* ARTICLES SECTION */
+.container{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+} 
+
+.container .card{
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
 }
+
+.container .card .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .imgBx{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #ffcc13;
+}
+
+.container .card .imgBx:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(255,255,255,.05);
+    font-weight: 700;
+}
+
+.container .card .imgBx img{
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .imgBx img{
+    max-width: 75px;
+}
+
+.container .card .content{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .content h3{
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.container .card .content a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* TODO Colocar todos em apenas uma seçao de breaks BREAKPOINTS PORTEFOLIO */
+
+@media (max-width: 992px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .card{
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .container .card{
+        width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container .card .imgBx{
+        position: relative;
+    }
+
+    .container .card .imgBx,
+    .container .card:hover .imgBx{
+        width: 100%;
+        height: 200px;
+        left: 0;
+    }
+
+    .container .card .imgBx img,
+    .container .card:hover .imgBx img{
+        max-width: 100px;
+    }
+
+    .container .card .content{
+        position: relative;
+        width: 100%;
+    }
+
+}
+
 
 /* CONTACT SECTION */
 .contact{
@@ -293,20 +504,188 @@
 
 
 
+
+/* PORTEFOLIO*/
+
+ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters > li{
+    list-style: none;
+    display: inline-block;
+}
+
+ul.filters > li > a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+ul.filters > li > a:hover{
+    background-color: #e6e9ed;
+}
+
+ul.filters > li.active > a{
+    color: #fff;
+    background-color: #28bea8;
+}
+
+.card{
+    position: relative;
+    margin-bottom: 50px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 1px 1px 1.5px rgba(0,0,0,0.075);
+}
+
+.card-head{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(67,78,94,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.card-hover{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40,190,169,0.9);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.card-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4.title{
+    color: #434e5e;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.card-btn{
+    margin-bottom: -60px;
+    font-size: 0.9rem;
+    background-color: #fff !important;
+    color: #222 !important;
+    border: 1px solid #eee !important;
+    border-radius: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card-btn:hover{
+    background-color: #28bea8 !important;
+    color: #fff !important;
+}
+
+
+
+
+@media (max-width: 767px) { 
+    
+    .caption{
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 69%;
+        z-index: 1;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    .caption h1{
+        font-size: 38px;
+        letter-spacing: .3rem;
+    }
+    
+    .caption h5{
+        font-size: 18px;
+    }
+
+    .navbar {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .9rem;
+        letter-spacing: .1rem;
+        background-color: rgba(0, 0, 0, 0.9)!important;
+    }
+
+
+    #diagram {
+        margin: 0 0 0 -100px;
+        overflow: hidden;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        float: none;
+    }
+
+        
+
+ }
+
+ @media (min-width: 768px) { 
+   /*  #content {
+        position: relative;
+        top: 50%;
+        left: 65%;  
+        transform: translate(-70%, -70%)
+    }  */
+
+ }
+
 /*  Extra small devices (portrait phones, less than 576px)
  No media query since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
+/* @media (min-width: 576px) { ... } */
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+/* @media (min-width: 768px) { ... } */
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+/* @media (min-width: 992px) { ... } */
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+/* @media (min-width: 1200px) { ... } */
 
 
 

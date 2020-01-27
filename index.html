@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fixed.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
 </head>
@@ -38,30 +39,30 @@
         <nav class="navbar navbar-expand-md fixed-top">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars fa-lg py-1 text-white"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav nav-fill w-100">
-                        <li class="nav-item">
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <a class="nav-link" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <a class="nav-link" href="#service">Skills</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <a class="nav-link" href="#tulha">Association</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portefolio">Portefolio</a>
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <a class="nav-link" href="#portefolio">Projects</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <a class="nav-link" href="#articles">Articles</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
@@ -132,19 +133,56 @@
 
 
     <div id="service" class="offset">
-        <div class="col-md-12">
-            <div class="section-title">
-                <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Interested Skils</h2>
-            </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Interested Skils</h2>
+                </div>
 
-            <div class="tulha-info">
-                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".9s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur perferendis 
-                    culpa illum odit consectetur unde amet, explicabo quam quaerat expedita molestias obcaecati 
-                    iste voluptatibus minima quidem! Autem, non minima?</p>
-                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur perferendis 
-                    culpa illum odit consectetur unde amet, explicabo quam quaerat expedita molestias obcaecati 
-                    iste voluptatibus minima quidem! Autem, non minima?</p>
+                
+                <div id="diagram"></div>
+                <div class="get">
+                    <div class="arc">
+                        <span class="text">Angular</span>
+                        <input type="hidden" class="percent" value="90" />
+                        <input type="hidden" class="color" value="#97BE0D" />
+                    </div>
+                    <div class="arc">
+                
+                        <span class="text">HTML5</span>
+                        <input type="hidden" class="percent" value="90" />
+                        <input type="hidden" class="color" value="#D84F5F" />
+                    </div>
+                    <div class="arc">
+                        <span class="text">React</span>
+                        <input type="hidden" class="percent" value="90" />
+                        <input type="hidden" class="color" value="#88B8E6" />
+                
+                    </div>
+                    <div class="arc">
+                        <span class="text">Javascript</span>
+                        <input type="hidden" class="percent" value="53" />
+                        <input type="hidden" class="color" value="#BEDBE9" />
+                    </div>
+                    <div class="arc">
+                        <span class="text">Autodidact</span>
+                        <input type="hidden" class="percent" value="100" />
+                        <input type="hidden" class="color" value="#fbd01e"/>
+                    </div>
+                    <div class="arc">
+                        <span class="text">SQL</span>
+                        <input type="hidden" class="percent" value="55" />
+                        <input type="hidden" class="color" value="#EDEBEE" />
+                    </div>
+                </div>
+
+
             </div>
+</div>
+
+
+
+
             
         </div>
     </div>
@@ -165,15 +203,157 @@
 
     <div id="portefolio" class="offset">
         <div class="section-title">
-            <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Portefolio</h2>
+            <h2 class="wow fadeInUp" data-wow-durration="1s" data-wow-delay=".4s">Projets</h2>
         </div>
-        <div class="tulha-info">
-            <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".9s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur perferendis 
-                culpa illum odit consectetur unde amet, explicabo quam quaerat expedita molestias obcaecati 
-                iste voluptatibus minima quidem! Autem, non minima?</p>
-            <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur perferendis 
-                culpa illum odit consectetur unde amet, explicabo quam quaerat expedita molestias obcaecati 
-                iste voluptatibus minima quidem! Autem, non minima?</p>
+         <div class="container-md">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="filters text-center">
+                        <li class="active" data-filter="*"><a href="#!">All</a></li>
+                        <li data-filter=".angular"><a href="#!">Angular</a></li>
+                        <li data-filter=".nodejs"><a href="#!">NodeJS</a></li>
+                        <li data-filter=".html"><a href="#!">HTML5</a></li>
+                        <li data-filter=".wordpress"><a href="#!">Wordpress</a></li>
+                        <li data-filter=".react"><a href="#!">React</a></li>
+                        <li data-filter=".react-native"><a href="#!">React Native</a></li>
+                    </ul>
+
+                    <div class="projects">
+
+                        <div class="row">
+
+                            <div class="col-lg-4 item angular">
+                               
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="img/4.png" alt="" class="img-fluid card-img">
+                                        <div class="card-overlay"><h2>Angular 7+</h2></div>
+                                        <div class="card-hover">
+                                            <h2>Lorem ipsum</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente non rem similique veniam tenetur officiis, enim mollitia perspiciatis natus.</p>
+                                            <p><button>Github</button></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h4 class="title">Angular 7</h4>
+                                        <a href="#!" class="btn btn-lg card-btn">See more</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 item nodejs">
+                               
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="img/4.png" alt="" class="img-fluid card-img">
+                                        <div class="card-overlay"><h2>Node JS</h2></div>
+                                        <div class="card-hover">
+                                            <h2>Lorem ipsum</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente non rem similique veniam tenetur officiis, enim mollitia perspiciatis natus. Quam ducimus aliquid maiores numquam assumenda animi, sed ratione atque.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h4 class="title">Node JS</h4>
+                                        <a href="#!" class="btn btn-lg card-btn">See more</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 item html">
+                               
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="img/4.png" alt="" class="img-fluid card-img">
+                                        <div class="card-overlay"><h2>HTML5</h2></div>
+                                        <div class="card-hover">
+                                            <h2>Lorem ipsum</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente non rem similique veniam tenetur officiis, enim mollitia perspiciatis natus. Quam ducimus aliquid maiores numquam assumenda animi, sed ratione atque.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h4 class="title">HTML5</h4>
+                                        <a href="#!" class="btn btn-lg card-btn">See more</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 item wordpress">
+                               
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="img/4.png" alt="" class="img-fluid card-img">
+                                        <div class="card-overlay"><h2>Wordpress</h2></div>
+                                        <div class="card-hover">
+                                            <h2>Lorem ipsum</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente non rem similique veniam tenetur officiis, enim mollitia perspiciatis natus. Quam ducimus aliquid maiores numquam assumenda animi, sed ratione atque.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h4 class="title">Wordpress</h4>
+                                        <a href="#!" class="btn btn-lg card-btn">See more</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 item react">
+                               
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="img/4.png" alt="" class="img-fluid card-img">
+                                        <div class="card-overlay"><h2>Comming Soon</h2></div>
+                                        <div class="card-hover">
+                                            <h2>Lorem ipsum</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente non rem similique veniam tenetur officiis, enim mollitia perspiciatis natus. Quam ducimus aliquid maiores numquam assumenda animi, sed ratione atque.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h4 class="title">React</h4>
+                                        <a href="#!" class="btn btn-lg card-btn">See more</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 item react-native">
+                               
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="img/4.png" alt="" class="img-fluid card-img">
+                                        <div class="card-overlay"><h2>Comming Soon</h2></div>
+                                        <div class="card-hover">
+                                            <h2>Lorem ipsum</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente non rem similique veniam tenetur officiis, enim mollitia perspiciatis natus. Quam ducimus aliquid maiores numquam assumenda animi, sed ratione atque.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h4 class="title">React Native</h4>
+                                        <a href="#!" class="btn btn-lg card-btn">See more</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
     </div>
@@ -182,13 +362,65 @@
         <div class="section-title">
             <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Articles</h2>
         </div>
-        <div class="tulha-info">
-            <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".9s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur perferendis 
-                culpa illum odit consectetur unde amet, explicabo quam quaerat expedita molestias obcaecati 
-                iste voluptatibus minima quidem! Autem, non minima?</p>
-            <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur perferendis 
-                culpa illum odit consectetur unde amet, explicabo quam quaerat expedita molestias obcaecati 
-                iste voluptatibus minima quidem! Autem, non minima?</p>
+        
+
+
+        <div class="container">
+            
+            <div class="card">
+                <div class="imgBx" data-text="Web Portefolio?">
+                    <img src="img/imgv1.png" alt="">
+                </div>
+                <div class="content">
+                    <div>      
+                        <h3>Reasons to have a web portefolio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Read More</a>
+                    </div> 
+                </div>
+            </div>
+
+
+        <div class="card">
+            <div class="imgBx" data-text="Why occurence log app?">
+                <img src="img/imgv4.png" alt="">
+            </div>
+            <div class="content">
+                <div>      
+                    <h3>Why i build an occurence log app?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Read More</a>
+                </div> 
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="imgBx" data-text="Launch">
+                <img src="img/imgv3.png" alt="">
+            </div>
+            <div class="content">
+                <div>      
+                    <h3>Launch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Read More</a>
+                </div> 
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx" data-text="Cenas">
+                <img src="img/imgv2.png" alt="">
+            </div>
+            <div class="content">
+                <div>      
+                    <h3>Cenas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Read More</a>
+                </div> 
+            </div>
+        </div>
+
     </div>
 
 
@@ -209,6 +441,9 @@
             </form>
         </div>
     </div> 
+    <br>
+    <br>
+    <br>
  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
@@ -217,7 +452,11 @@
     <script src="js/typed.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/jquery.js" type="text/javascript"></script>-->
+    <script src="js/raphael.js" type="text/javascript"></script>
+    <script src="js/init.js" type="text/javascript"></script> 
 
 
     <script type="text/javascript">
@@ -245,6 +484,35 @@ wow.init();
         backSpeed: 60,
         loop: true
     }); 
+
+
+    /* PORTEFOLIO SECTION */
+
+    var $projects = $('.projects');
+    $projects.isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+    });
+
+    $('ul.filters > li').on('click', function(e){
+        e.preventDefault();
+ 
+        var filter = $(this).attr('data-filter');
+
+        $('ul.filters > li').removeClass('active');
+        $(this).addClass('active');
+
+        $projects.isotope({filter: filter});
+    });
+
+    $('.card').mouseenter(function(){
+        $(this).find('.card-overlay').css({'top': '-100%'});
+        $(this).find('.card-hover').css({'top': '0'});
+    }).mouseleave(function(){
+        $(this).find('.card-overlay').css({'top': '0'});
+        $(this).find('.card-hover').css({'top': '100%'});
+    })
+
 
 
     </script>
