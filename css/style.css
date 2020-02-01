@@ -183,7 +183,7 @@
     .timeline li:nth-child(odd),
     .timeline li:nth-child(even){
         width: 100%;
-        text-align: left;
+        text-align: justify;
         padding-left: 50px;
         padding-bottom: 50px;
     }
@@ -219,7 +219,7 @@
     text-shadow: .1rem .1rem .1rem black;
 }
 
-.caption h5{
+.caption h6{
     font-size: 28px;
     text-shadow: .1rem .1rem .5rem black;
 }
@@ -535,6 +535,20 @@ a {
         position: relative;
         width: 100%;
     }
+
+    .about-info p{
+        line-height: 28px;
+        font-size: 22px;
+        color: white;
+        text-align: justify;
+    }
+    .tulha-info p{
+        line-height: 28px;
+        font-size: 18px;
+        color: #fff;
+        text-align: justify;
+    }
+  
 }
 
 
