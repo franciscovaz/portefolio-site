@@ -45,6 +45,8 @@
 
 
 
+
+
 /* Timeline */
 
 .timeline{
@@ -724,6 +726,19 @@ height:calc(100% - 125px);
 overflow-y: scroll;     /*give auto it will take based in content */
 }
 
+.modal-body h3{
+    text-align: center;
+}
+
+.modal-body p {
+    text-align: justify;
+}
+
+.modal-body .img-responsive {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+}
 
 
 @media (max-width: 767px) { 
@@ -757,12 +772,18 @@ overflow-y: scroll;     /*give auto it will take based in content */
 
 
     #diagram {
-        margin: 0 0 0 -100px;
-        overflow: hidden;
-        align-items: center;
-        justify-content: space-around;
-        display: flex;
-        float: none;
+        width: 100%;
+        padding-left: -200px;
+    }
+
+    .modal-body p {
+        text-align: justify;
+    }
+    
+    .modal-body .img-responsive {
+        display: block;
+        width: 300px;
+        max-height: 100%;
     }
  }
 
